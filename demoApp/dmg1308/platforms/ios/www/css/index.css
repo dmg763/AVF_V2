@@ -1,0 +1,354 @@
+/*
+Denise M. Gilbert
+AVF Term 1308
+index.css Page
+*/
+
+body {
+    text-transform:uppercase;
+    width: 100%;
+
+}
+
+h1 {
+	color: #044371;
+	font-size:24px;
+    font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-style: italic;
+	font-size: medium;
+	font-weight: normal;
+}
+
+h3 {
+    color: #840D1C;
+    font-size: 12pt;
+    padding: 0px;
+    text-align: center;
+}
+
+h4 {
+    color: #044371;
+    font-size:20px;
+    font-weight: bold;
+}
+
+h5 {
+    color: #000000;
+    font-size:20px;
+    font-weight: bold;
+}
+
+h6 {
+    color: #840D1C;
+    font-size:20px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+p {
+	font-size: 22px;
+}
+
+a {
+    color: blue;
+}
+
+dt {
+    font-size: 14pt;
+    font-weight: bold;
+    padding-left: 22px ;
+    text-indent: -22px ;
+    margin-bottom: 22px;
+    text-transform: none;
+}
+
+dd {
+    font-size: 14pt;
+    margin-left: 22px ;
+    margin-bottom: 22px;
+    text-transform: none;
+}
+
+/************************************* jQUERY MOBILE CSS *************************************/
+
+ul {
+    list-style-type: none;
+    margin: 2px;
+    padding: 2px;
+}
+
+.ui-header {
+	background: #044371;
+	padding-top: 15px;
+    text-align: left;
+}
+
+.ui-grid-b {
+    text-align: center;
+}
+
+.logoSpacing {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.ui-btn {
+	background: #036F8D;
+	color: white;
+	text-shadow: none;
+    cursor: pointer;
+}
+
+.ui-btn-active {
+	background: #044371;
+    color: white;
+}
+
+.ui-footer {
+	background: #044371;
+}
+
+.ui-footer h1 {
+	color: #FFFFFF;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.ui-page {
+	background: transparent;
+}
+
+.ui-li-divider {
+    background: #C1B298;
+    color: #044371;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.listviewImages {
+	padding-left: 10px;
+}
+
+.liLabels {
+	color: white;
+	text-shadow: none;
+}
+
+/************************************* HOME *************************************/
+
+#home {
+
+    background: #C1B298;
+
+}
+
+/************************************* INSTAGRAM *************************************/
+
+#instagramPage {
+
+    background: #C1B298;
+
+}
+
+.instaPics img { 
+    border: 3px solid #044371;
+    margin-bottom: 0px;
+    max-width: 100%;
+}
+
+.instaPics {
+    display: inline;
+    float: left;
+}
+
+/************************************* CAMERA *************************************/
+
+#cameraPage {
+
+    background: #C1B298;
+
+}
+
+#venueImage {
+
+    width: 200px;
+    height: 200px;
+    display: none;
+
+}
+
+#smallImage {
+
+    width: 60px;
+    height: 60px;
+    display: none;
+
+}
+
+#largeImage {
+
+    display: none;
+
+}
+
+/************************************* FOURSQUARE *************************************/
+
+#foursquarePage {
+
+    background: #C1B298;
+
+}
+
+#foursquarePage h1 {
+
+    color: #840D1C;
+
+}
+
+#foursquarePage h4 {
+
+    font-size: 22px;
+
+}
+
+#foursquarePage li:nth-child(2n+1) {
+
+    background: #CEBEA2;
+
+}
+
+/************************************* GEOLOCATION *************************************/
+
+#geolocationPage {
+
+    background: #C1B298;
+    color: #840D1C;
+    font-weight: bold;
+
+}
+
+.geoText {
+    margin: 160px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+/************************************* ABOUT *************************************/
+
+#aboutPage {
+
+    background: #C1B298;
+
+}
+
+#aboutPage h1 {
+
+    color: #840D1C;
+
+}
+
+/************************************* RESEARCH PAGES *************************************/
+
+.researchPages {
+    background: #FFFFFF;
+}
+
+/************************************* VENUES *************************************/
+
+#myVenueInfoPage {
+
+    background: #C1B298;
+
+}
+
+label {
+
+    color: #840D1C;
+    font-size:20px;
+    font-weight: bold;
+	text-align: center;
+
+}
+
+#dataTable {
+
+    background-color: Transparent;
+    border: 1;
+    width: 100%;
+
+}
+
+.addVenue {
+background-color: Transparent;
+float: left;
+margin-left: 0;
+position: absolute;
+left: 0px
+}
+ 
+.checkbox {
+background-color: Transparent;
+background-image: url('../img/heart.png');
+width: auto;
+}
+ 
+.textbox {
+background-color: #FFFFFF;
+font-size: 16px;
+width: auto;
+}
+ 
+.viewButton { 
+float: left;
+margin: 0px;
+padding: 0px;
+width: auto;
+}
+ 
+.deleteButton { 
+float: left;
+margin: 0px;
+padding: 0px;
+width: auto;
+}
+
+cell {
+    padding: 0px;
+}
+    
+/************************************* MEDIA QUERY - I-PAD PORTRAIT ORIENTATION *************************************/
+
+@media only screen and (min-width: 768px) {
+
+    .instaPics {
+        padding-left: 3.4%;
+        width: 29.3%;
+    }
+}
+
+/************************************* MEDIA QUERY - I-PAD LANDSCAPE ORIENTATION *************************************/
+
+@media only screen and (min-width: 1024px) {
+    
+    .instaPics {
+        padding-left: 2.4%;
+        width: 22%;
+    }
+}
+

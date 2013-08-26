@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--
+ Denise M. Gilbert
+ AVF Term 1308
+ index.html Page
+ -->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        
+        <!--  Mobile Viewport -->
+        
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+        
+        <!--  Stylesheets -->
+        
+        <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.3.2.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.theme-1.3.2.min.css" />
+        <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+        <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="js/libs/modernizr.custom.49087.js"></script>
+        
+        <title>Denise's Demo App</title>
+    </head>
+    
+    <body>
+        
+        <div class="app">
+            <h1>PhoneGap</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+            </div>
+        </div>
+        
+        
+        <!--  HOME PAGE -->
+        
+        <section id="home" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <img src="img/imThereLogo.png" alt="Logo" class="logoSpacing">
+                    <nav data-role="navbar" data-iconpos="top">
+                        <ul>
+                            <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                            <li><a href="#aboutPage" data-icon="info">About</a></li>
+                        </ul>
+                    </nav>
+                    </header>
+                
+                <article data-role=content>
+                    <div class=ui-grid-b ui-responsive>
+                        <div class=ui-block-a>
+                            <a href=#instagramPage><img src=img/pictureFrame-grid.png alt="Instagram Icon"/></a><h6>INSTAGRAM</h6>
+                        </div>
+                        <div class=ui-block-b>
+                            <a href=#foursquarePage><img src=img/foursquare-grid.png alt="Foursquare Icon"/></a><h6>FOURSQUARE</h6>
+                        </div>
+                        <div class=ui-block-c>
+                            <a href=#geolocationPage id="navGeolocation"><img src=img/globe-grid.png alt="Geolocation Icon"/></a><h6>LOCATION</h6>
+                        </div>
+                        <div class=ui-block-a>
+                            <a href=# id="navAccellerometer"><img src=img/circleArrow-grid.png alt="Accellerometer Icon"/></a><h6>ACCELEROMETER</h6>
+                        </div>
+                        <div class=ui-block-b>
+                            <a href=#cameraPage><img src=img/camera-grid.png alt="Camera Icon"/></a><h6>CAMERA</h6>
+                        </div>
+                        <div class=ui-block-c>
+                            <a href=#myVenueInfoPage><img src=img/stars-grid.png alt="Venue Info Icon"/></a><h6>MY VENUES</h6>
+                        </div>
+                    </div>
+                </article>
+			
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+                <nav data-role="navbar">
+                    
+                    <h1>RESEARCH TOPICS . . .</h1>
+                    
+                    <ul>
+                        <li data-theme="b"><a href="#weekOne"><img src="img/one.png" alt="Number One Icon"></a></li>
+                        <li data-theme="b"><a href="#weekTwo"><img src="img/two.png" alt="Number Two Icon"></a></li>
+                        <li data-theme="b"><a href="#weekThree"><img src="img/three.png" alt="Number Three Icon"></a></li>
+                        <li data-theme="b"><a href="#weekFour"><img src="img/four.png" alt="Number Four Icon"></a></li>
+                    </ul>
+                    
+                </nav>
+                
+            </footer>
+            
+        </section>
+        
+        <!--  ABOUT PAGE -->
+        
+        <section id="aboutPage" data-role="page">
+            
+            <article data-role="panel" id="credits">
+				
+				<p><strong><em>Silver Icons:</em></strong></p>
+				<p>Mysitemyway Design Team</p>
+                
+            </article>
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#aboutPage" class="ui-btn-active ui-state-persist" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                <p>Denise M. Gilbert</p>
+                <p>E-mail/iChat:  dmg763@fullsail.edu</p>
+                <p><a href="https://github.com/dmg763/AVF.git">Main AVF GitHub Page</a></p>
+                <p><a href="http://dmg763.github.io/AVF/dgilbert/platforms/ios/www/index.html">IOS GitHub Page</a></p>
+                <p><a href="http://dmg763.github.io/AVF/dgilbert/platforms/android/assets/www/index.html">Android GitHub Page</a></p>
+				
+                <a href="#credits" data-role="button" data-inline="false">Credits</a>
+				
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  WEEK 1 RESEARCH -->
+        
+        <section id="weekOne" data-role="page" class="researchPages">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <h1>WEEK ONE &#8211; Industry Research and Project Intent</h1>
+                
+                <dl>
+                    
+                    <dt>1.  Describe Your Project Intentions for the Month</dt>
+                    
+                    <dd>This week I researched APIs, native features, PhoneGap and the use of terminal.</dd>
+                    
+                    <dd>My project intent is to create an app that will inform the user of local entertainment and events in their area.</dd>
+                    
+                    <dd>I am hoping to combine the use of camera, geolocation, contacts, and notifications to create a nifty little app that will fulfill the requirements of my project intent.</dd>
+                </dl>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  WEEK 2 RESEARCH -->
+        
+        <section id="weekTwo" data-role="page" class="researchPages">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <h1>WEEK TWO &#8211; DATA RESEARCH, PROJECT INTENT</h1>
+                
+                <dl>
+                    
+                    <dt>1.  Less obvious perks of using 'live' data resources include logins and payments. How could Twitter be used in these two scenarios?</dt>
+                    
+                    <dd>I believe Twitter can be used the same as Facebook to create or login to different sites and applications.  This would grab the users information from their Twitter account such as name, address, etc.  This type of login is automatic once created unless the user logs out.  The same would be true for payments.  Twitter would associate a user with a specific payment service.  Most likely this would be PayPal as this service is widely accepted.</dd>
+                    
+                    <dt>2.  Visit Programmableweb.com and search for JSON-P data sources. Why would we need JSON-P, specifically?</dt>
+                    
+                    <dd>If I understand correctly, JSON-P is used for cross-domain requests.  This allows the user to access data outside of the current application or site.</dd>
+                    
+                    <dt>3.  Based on the JSON-P search results: what data resource(s) do you think might pair well with which types of Native device features?</dt>
+                    
+                    <dd>Camera will pair well with many of the APIs.  Some of these might include advertising, blogging, entertainment, social networking.</dd>
+                    
+                    <dd>Contacts could pair well with databases, social networking, e-mail, file sharing, and games.</dd>
+                    
+                    <dd>Notification could pair well with e-mail, social networking, entertainment, financial, job search, and messaging.</dd>
+                    
+                    <dt>4.  Please describe any design and functionality intentions you may have for your Demo app components this month.</dt>
+                    
+                    <dd>I was hoping to combine many of the native features with an entertainment API.  I was thinking the user could enter a zip code to find local entertainment.  This may include concerts, pumpkin patches, theatre, amusement parks, restaurants, etc.  The user could receive notifications, take pictures, and share with contacts.  This may change as the entertainment APIs I am finding so far, are not really what I was thinking about.  I will continue my search and see if I can find something more suitable.</dd>
+                    
+                    <dt>5.  Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.</dt>
+                    
+                    <dd>One lesson learned that I do entirely too often is to “over think” what is required.  When I read the instructions, it sounds so simple, I believe I must be missing something.</dd>
+                    
+                    <dd>For the most part, I do start as early as possible; however, when I run into issues, I tend to feel frustrated and stuck.  If I cannot resolve the issue, I try to do more research and reach out to others.  It have learned it is in my best interest, while waiting for assistance, to work on something else instead of dwelling on that one specific issue.  I feel more productive and as if I have at least accomplished something.</dd>
+                    
+                </dl>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  WEEK 3 RESEARCH -->
+        
+        <section id="weekThree" data-role="page" class="researchPages">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <h1>WEEK THREE &#8211; ACCESSIBILITY</h1>
+                
+                <dl>
+                    
+                    <dt>1.  What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)</dt>
+                    
+                    <dd>One way to provide better accessibility is to include “skip content” links.  This will allow users that need screen readers the ability to skip over repetitive content such as navigation menus.</dd>
+                    
+                    <dd>Another way is to make link names descriptive and non-repetitive.  This allows for easier searching of content when one is using a screen reader.</dd>
+                    
+                    <dd>One more way might be to use a “go” or “submit” link on all items in a list.  In this manner the user can view all of the options in the list to choose one instead of having to go right to the first item on the list.</dd>
+                    
+                    <dt>2.  Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</dt>
+                    
+                    <dd>The videos that I watched did not really describe issues with screen readers with the exception of cost.  However, according to a current survey listing from Minnesota Department of Natural Resources (2013) the following issues seem to be the most common.</dd>
+                    
+                    <dd>
+                        <ol>
+                            <li>The presence of inaccessible Flash content</li>
+                            <li>CAPTCHA - images presenting text used to verify that you are a human user</li>
+                            <li>Links or buttons that do not make sense</li>
+                            <li>Images with missing or improper descriptions (alt text)</li>
+                            <li>Screens or parts of screens that change unexpectedly</li>
+                            <li>Complex or difficult forms</li>
+                            <li>Lack of keyboard accessibility</li>
+                            <li>Missing or improper headings</li>
+                            <li>Too many links or navigation items</li>
+                            <li>Complex data tables</li>
+                            <li>Inaccessible or missing search functionality</li>
+                            <li>Lack of "skip to main content" or "skip navigation" links</li>
+                        </ol>
+                    </dd>
+                    
+                    <dd>Most of these issues can easily be resolved by staying aware and incorporating good design into my apps.  I will keep this list handy and make it a habit to be considerate of these concerns in all of my apps.</dd>
+                    
+                    <dt>3.  Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</dt>
+                    
+                    <dd>iOS-based devices include the following features:  VoiceOver, Voice Control, Mono Audio, Speak Auto Text, White on Black, and Zoom.</dd>
+                    
+                    <dd>Android(JellyBean) includes the following features:  Double Tapping, Touch Exploration, Accessibility Actions, TalkBack, and Support for Braille.</dd>
+                    
+                    <dt>4.  Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</dt>
+                    
+                    <dd>Mobile Accessibility is an app designed for the blind.  This app is two products in one and is designed for the Android.</dd>
+                    
+                    <dd>Siri is a speech recognition app.  This allows users to talk to control their device.  This app can understand one’s natural voice and will also ask questions if it does not understand what the user wants.  This works with VoiceOver on iOS devices.</dd>
+                </dl>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  WEEK 4 RESEARCH -->
+        
+        <section id="weekFour" data-role="page" class="researchPages">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                <h1>WEEK FOUR &#8211; </h1>
+                <p></p>
+                <p></p>
+                <p></p>
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  INSTAGRAM -->
+        
+        <section id="instagramPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article id="imagesContainer" data-role="content">
+                <ul id="data-output"></ul>
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  FOURSQUARE -->
+        
+        <section id="foursquarePage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <ul id="fourSquare-city"></ul>
+                
+                <ul id="fourSquare-venues"></ul>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  CAMERA -->
+        
+        <section id="cameraPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <img id="smallImage" src="" alt="Small Image"/>
+                <img id="largeImage" src="" alt="Large Image"/>
+                
+                <button id="capturePhoto">Capture Photo</button> <br>
+                <button id="capturePhotoEdit">Capture Editable Photo</button> <br>
+                <button id="getPhotoLibrary">From Photo Library</button><br>
+                <button id="getPhotoAlbum">From Photo Album</button><br>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  GEOLOCATION -->
+        
+        <section id="geolocationPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                <p id="geolocation">Finding geolocation...</p>
+                <div id="map">Map Placeholder</div>
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  ACCELEROMETER -->
+        
+        <section id="accelerometerPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  VENUES - MY ENTERTAINMENT INFO -->
+        
+        <section id="myVenueInfoPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                <table id="dataTable">
+                    
+                </table>
+                
+                <input id="deleteAllBtn" type="button" data-icon="delete" data-inline="true" value="Delete All" onclick="deleteAll()"/>
+                <input id="addVenueBtn" type="button" data-icon="plus" data-inline="true" value="Add Venue" onclick="addVenue()"/>
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <!--  TEST PAGE -->
+        
+        <section id="testPage" data-role="page">
+            
+            <header data-role="header" data-position="fixed" data-theme="b">
+                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
+                <nav data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#aboutPage" data-icon="info">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <article data-role="content">
+                
+                
+            </article>
+            
+            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+            </footer>
+            
+        </section>
+        
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">app.initialize();</script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&sensor=false"></script>
+        
+    </body>
+</html>
