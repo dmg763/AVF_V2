@@ -43,7 +43,7 @@
         
         <section id="home" data-role="page">
             
-            <header data-role="header" data-position="fixed" data-theme="b">
+            <header data-role="header" data-position="fixed">
                 <img src="img/imThereLogo.png" alt="Logo" class="logoSpacing">
                     <nav data-role="navbar" data-iconpos="top">
                         <ul>
@@ -51,42 +51,44 @@
                             <li><a href="#aboutPage" data-icon="info">About</a></li>
                         </ul>
                     </nav>
-                    </header>
+            </header>
                 
-                <article data-role=content>
-                    <div class=ui-grid-b ui-responsive>
-                        <div class=ui-block-a>
-                            <a href=#instagramPage><img src=img/pictureFrame-grid.png alt="Instagram Icon"/></a><h6>INSTAGRAM</h6>
-                        </div>
-                        <div class=ui-block-b>
-                            <a href=#foursquarePage><img src=img/foursquare-grid.png alt="Foursquare Icon"/></a><h6>FOURSQUARE</h6>
-                        </div>
-                        <div class=ui-block-c>
-                            <a href=#geolocationPage id="navGeolocation"><img src=img/globe-grid.png alt="Geolocation Icon"/></a><h6>LOCATION</h6>
-                        </div>
-                        <div class=ui-block-a>
-                            <a href=# id="navAccellerometer"><img src=img/circleArrow-grid.png alt="Accellerometer Icon"/></a><h6>ACCELEROMETER</h6>
-                        </div>
-                        <div class=ui-block-b>
-                            <a href=#cameraPage><img src=img/camera-grid.png alt="Camera Icon"/></a><h6>CAMERA</h6>
-                        </div>
-                        <div class=ui-block-c>
-                            <a href=#myVenueInfoPage><img src=img/stars-grid.png alt="Venue Info Icon"/></a><h6>MY VENUES</h6>
-                        </div>
-                    </div>
+                <article data-role="content" id="homePageGrid">
+                    
+                    <ul class="ui-grid-b">
+                        <li class="ui-block-a">
+                            <a href="#instagramPage"><img src="img/pictureFrame-grid.png" alt="Instagram Icon"/></a><h6>INSTAGRAM</h6>
+                        </li>
+                        <li class="ui-block-b">
+                            <a href="#foursquarePage"><img src="img/foursquare-grid.png" alt="Foursquare Icon"/></a><h6>GEOLOCATION &amp;<br>FOURSQUARE</h6>
+                        </li>
+                        <li class="ui-block-c">
+                            <a href="#geolocationPage" id="navGeolocation"><img src="img/globe-grid.png" alt="Geolocation Icon"/></a><h6>GEOLOCATION &amp;<br>GOOGLE MAPS</h6>
+                        </li>
+                        <li class="ui-block-a">
+                            <a href="#" id="navAccellerometer"><img src="img/circleArrow-grid.png" alt="Accellerometer Icon"/></a><h6>ACCELEROMETER</h6>
+                        </li>
+                        <li class="ui-block-b">
+                            <a href="#cameraPage"><img src="img/camera-grid.png" alt="Camera Icon"/></a><h6>CAMERA</h6>
+                        </li>
+                        <li class="ui-block-c">
+                            <a href="#myVenueInfoPage"><img src="img/stars-grid.png" alt="Venue Info Icon"/></a><h6>MY VENUES</h6>
+                        </li>
+                    </ul>
+                    
                 </article>
 			
             <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
                 
                 <nav data-role="navbar">
                     
-                    <h1>RESEARCH TOPICS . . .</h1>
+                    <h1 class="footerHeader">RESEARCH TOPICS . . .</h1>
                     
                     <ul>
-                        <li data-theme="b"><a href="#weekOne"><img src="img/one.png" alt="Number One Icon"></a></li>
-                        <li data-theme="b"><a href="#weekTwo"><img src="img/two.png" alt="Number Two Icon"></a></li>
-                        <li data-theme="b"><a href="#weekThree"><img src="img/three.png" alt="Number Three Icon"></a></li>
-                        <li data-theme="b"><a href="#weekFour"><img src="img/four.png" alt="Number Four Icon"></a></li>
+                        <li data-theme="b"><a href="#weekOne"><img src="img/one-64.png" alt="Number One Icon"></a></li>
+                        <li data-theme="b"><a href="#weekTwo"><img src="img/two-64.png" alt="Number Two Icon"></a></li>
+                        <li data-theme="b"><a href="#weekThree"><img src="img/three-64.png" alt="Number Three Icon"></a></li>
+                        <li data-theme="b"><a href="#weekFour"><img src="img/four-64.png" alt="Number Four Icon"></a></li>
                     </ul>
                     
                 </nav>
@@ -120,8 +122,8 @@
                 <p>Denise M. Gilbert</p>
                 <p>E-mail/iChat:  dmg763@fullsail.edu</p>
                 <p><a href="https://github.com/dmg763/AVF.git">Main AVF GitHub Page</a></p>
-                <p><a href="http://dmg763.github.io/AVF_2/AVF_1308/demoApp/dmg1308/platforms/ios/www/index.html">IOS GitHub Page</a></p>
-                <p><a href="http://dmg763.github.io/AVF/dgilbert/platforms/android/assets/www/index.html">Android GitHub Page</a></p>
+                <p><a href="http://dmg763.github.io/AVF_V2/demoApp/dmg1308/platforms/ios/www/index.html">IOS GitHub Page</a></p>
+                <p><a href="http://dmg763.github.io/AVF_V2/demoApp/dmg1308/platforms/android/assets/www/index.html">Android GitHub Page</a></p>
 				
                 <a href="#credits" data-role="button" data-inline="false">Credits</a>
 				
@@ -313,10 +315,55 @@
             </header>
             
             <article data-role="content">
-                <h1>WEEK FOUR &#8211; </h1>
-                <p></p>
-                <p></p>
-                <p></p>
+                
+                <dl>
+                <dt>1.  What are the 'top selling' app categories in the U.S.? Japan? Great Britain?</dt>
+                
+                <dd>By far, the top selling app category in all three countries is games.  The number one game in all three countries is Asphalt 8:  Airborne.</dd>
+                
+                <dd>According to Top app of the world, (2013), the following are some of the other top categories in each country.</dd>
+                
+                <dd>United States:  Photo &amp; Video, Sports, and Lifestyle.</dd>
+                
+                <dd>Japan:  Entertainment, Business, Photo &amp; Video.</dd>
+                
+                <dd>Great Britain:  Health &amp; Fitness, Navigation, Photo &amp; Video.</dd>
+                
+                <dt>2.  Based on your three answers above, what might you infer about each of the markets listed?</dt>
+                
+                <dd>I would infer that people in general are most interested in sharing photos and videos, healthy living, and entertainment.  I am not surprised that one of Japan’s top selling apps is related to business.</dd>
+                
+                <dd>What is the average cost and bandwidth limit per user (in general) in each of the three markets? How may this impact development?
+                
+                <dd>According to The WhiteFence Index, (2013), the average cost in the United States is $41.81/month.  Bandwidth usage on the other hand is hard to tie down per user because this category can be subdivided into several other categories such as people with children, singles, two adults with no children, empty nesters, and teenagers.</dd>
+                
+                <dd>Averages are very difficult to find because of all the different types of service and providers.  I wonder what the $41.81/month described above includes.  I use the Internet and very basic TV services and my bill is more than that.</dd>
+                
+                <dd>As developers we need to always be conscious of what is included in our apps.  We need to design the app to run efficiently and use the least amount of bandwidth as possible by incorporating the techniques used in responsive design.</dd>
+                
+                <dt>3.  And, finally, what would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.</dt>
+                
+                <dd>I would explain that games are the number one topic and global market choice.  While one could always come up with the next greatest game hit, the market is rather saturated.  It would probably have to be a game that could maintain itself by providing new releases and such.
+                <dd>I would probably suggest to focus more on a topic like lifestyle or health and wellness as those are also popular categories in the global marketplace; however, not as saturated.</dd>
+                
+                <dd><strong>Resources</strong></dd>
+                
+                <dd>100 BEST FREE MOBILE APPS. (2012). PC Magazine, 184-217.</dd>
+                
+                <dd>LENDINO, J. (2012). THE BEST NEXUS 7 APPS. PC Magazine, 100-121.</dd>
+                
+                <dd>The Price of Free. (2013). CRM Magazine, 17(6), 10-13.</dd>
+                
+                <dd>Compare Utility &amp; Essential Home Services Prices Among Top U.S. Cities. (2013). Retrieved from http://www.whitefenceindex.com.</dd>
+                
+                <dd>Top app of the world. (2013). Retrieved from http://topappoftheworld.com.</dd>
+                
+                <dd>WILSON, J. L., &amp; COSTA, D. (2013). BEST IPAD APPS. PC Magazine, 207-237.</dd>
+                
+                <dd>WONG, B. (2012). Smart Phones And Tablets Get The Best Apps. Electronic Design, 60(9), 64.</dd>
+                    
+                </dl>
+                
             </article>
             
             <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
@@ -365,6 +412,18 @@
             
             <article data-role="content">
                 
+                <h1>CHICAGO</h1>
+                
+                <h3>lat = 41.878928</h3>
+                
+                <h3>lng = -87.636415</h3>
+                
+                <ul id="lat-output"></ul>
+                
+                <ul id="lng-output"></ul>
+                
+                <div id="map2">Map Placeholder</div>
+                
                 <ul id="fourSquare-city"></ul>
                 
                 <ul id="fourSquare-venues"></ul>
@@ -385,7 +444,7 @@
                 <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
                 <nav data-role="navbar" data-iconpos="top">
                     <ul>
-                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#home" data-icon="home">Home</a></li>
                         <li><a href="#aboutPage" data-icon="info">About</a></li>
                     </ul>
                 </nav>
@@ -393,17 +452,28 @@
             
             <article data-role="content">
                 
-                <img id="smallImage" src="" alt="Small Image"/>
-                <img id="largeImage" src="" alt="Large Image"/>
+                <div id="largeImage">Image Placeholder</div>
                 
-                <button id="capturePhoto">Capture Photo</button> <br>
-                <button id="capturePhotoEdit">Capture Editable Photo</button> <br>
-                <button id="getPhotoLibrary">From Photo Library</button><br>
-                <button id="getPhotoAlbum">From Photo Album</button><br>
+                <h1>CAMERA OPTIONS . . .</h1>
+                
+                <input id="snapPhoto" type="button" data-icon="plus" data-inline="true" value="Snap Photo" />
                 
             </article>
             
             <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
+                
+                <nav data-role="navbar">
+                    
+                    <h1>CAMERA OPTIONS . . .</h1>
+                    
+                    <ul>
+                        <li data-theme="b"><a href="#" id="cameraButton"><img src="img/snapPhoto.png" alt="Camera Button Icon"></a></li>
+                        <li data-theme="b"><a href="#"><img src="img/editPhoto.png" alt="Edit Photo Icon"></a></li>
+                        <li data-theme="b"><a href="#" id="libraryButton"><img src="img/photoLibrary.png" alt="Library Button Icon"></a></li>
+                        <li data-theme="b"><a href="#"><img src="img/book.png" alt="Photo Album Icon"></a></li>
+                    </ul>
+                    
+                </nav>
                 
             </footer>
             
@@ -474,37 +544,15 @@
             
             <article data-role="content">
                 
+                <h1>MY VENUES . . .</h1>
+                
                 <table id="dataTable">
                     
                 </table>
                 
-                <input id="deleteAllBtn" type="button" data-icon="delete" data-inline="true" value="Delete All" onclick="deleteAll()"/>
-                <input id="addVenueBtn" type="button" data-icon="plus" data-inline="true" value="Add Venue" onclick="addVenue()"/>
-                
-            </article>
-            
-            <footer data-role="footer" data-position="fixed" data-id="samefooter" data-theme="b">
-                
-            </footer>
-            
-        </section>
-        
-        <!--  TEST PAGE -->
-        
-        <section id="testPage" data-role="page">
-            
-            <header data-role="header" data-position="fixed" data-theme="b">
-                <div><a href="#home"><img src="img/imThereLogo.png" alt="Logo" class="logoSpacing"></a></div>
-                <nav data-role="navbar" data-iconpos="top">
-                    <ul>
-                        <li><a href="#home" data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
-                        <li><a href="#aboutPage" data-icon="info">About</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-            <article data-role="content">
-                
+                <input id="deleteAllBtn" type="button" data-icon="delete" data-inline="true" value="Delete All" />
+                <input id="showAllBtn" type="button" data-icon="plus" data-inline="true" value="Show All" />
+                <input id="addVenueBtn" type="button" data-icon="plus" data-inline="true" value="Add Venue" />
                 
             </article>
             
@@ -518,7 +566,6 @@
         <script src="js/jquery.mobile-1.3.2.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">app.initialize();</script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&sensor=false"></script>
         
     </body>
