@@ -235,9 +235,9 @@ ul {
 }
 
 #map2 {
-    width: 50%;
+    width: 75%;
     height: 200px;
-    text-align: center;
+    margin: auto;
 }
 
 /************************************* GEOLOCATION *************************************/

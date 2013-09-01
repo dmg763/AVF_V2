@@ -343,85 +343,67 @@ function onDeviceReady() {
     });
 
     // FOURSQUARE
-    $('#foursquarePage').on('pageinit', function () {
 
-        var placesOutput = function (info) {
+$('#foursquarePage').on('pageinit', function () {
 
-                console.log(info);
-                    
-                            // SAVING CODE FOR FUTURE REFERENCE
-                
-                            //$.each(info.response, function (index, geocode) {
+    var placesOutput = function (info) {
 
-                            //var cityHeader = "<h1>" + geocode.displayString + "</h1>";
+        console.log(info);
 
-                            //$("#fourSquare-city").append(cityHeader);
+        $.each(info.response.groups, function (index, group) {
 
-                            //});
+            $.each(group.items, function (index, item) {
 
-                $.each(info.response.groups, function (index, group) {
+                var popularPlaces = "<li><h4>" + item.venue.name + "</h4><h5>" + "<a href='" + item.venue.canonicalUrl + "'/a>" + "</h5></li>";
 
-                    $.each(group.items, function (index, item) {
-
-                        var popularPlaces = "<li><h4>" + item.venue.name + "</h4><h5>" + "<a href='" + item.venue.canonicalUrl + "'/a>" + "</h5></li>";
-
-                        $("#fourSquare-venues").append(popularPlaces);
-                    });
-                });
-                            
-                            // SAVING CODE FOR FUTURE REFERENCE
-                            
-                            //$.each(info.response, function (index, geocode) {
-                                   
-                            //$.each(geocode.geometry, function (index, bounds) {
-                                          
-                            //var latitude = "<h4>Latitude:  " + bounds.ne.lat + "</h4>";
-                                          
-                            //$("#lat-output").append(lat);
-                            //});
-                            //});
-                            
-                            //$.each(info.response, function (index, geocode) {
-                                   
-                            //$.each(geocode.geometry, function (index, bounds) {
-                                          
-                            //var longitude = "<h4>Longitude:  " + bounds.ne.lng + "</h4>";
-                                          
-                            //$("#lng-output").append(lng);
-                            //});
-                            //});
-            };
-
-        $(function () {
-
-            var url = "https://api.foursquare.com/v2/venues/explore?ll=44.30,37.20&near=Chicago, IL&client_id=TGZE1Y20FMUHMIMDTR5G3LTBUKT4NYSST3IEWCKCPOJAVLNI&client_secret=OPOSSLEYHH2ZR5G5I05PTCDQRP0FA24WHUDSZ0HLIYVFWT2O&v=20130814";
-
-            $.getJSON(url, placesOutput);
-
+                $("#fourSquare-venues").append(popularPlaces);
+            });
         });
+
+		
+		$.each(info.response, function (index, geocode) {
+
+			$.each(geocode.geometry, function (index, bounds) {
+
+				var locationText = "<h3>Latitude:  " + bounds.sw.lat + "</h3>" + "<h3>Longitude:  " + bounds.sw.lng + "</h3>";
+				
+				var lat = bounds.sw.lat;
+				var lng = bounds.sw.lng;
+				
+				var currentposition = new google.maps.LatLng(lat, lng);
                             
+    var mapoptions = {
+        zoom: 12,
+        center: currentposition,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
                             
-                            var lat = 41.878928;
-                            var lng = -87.636415;
-                            
-                            var currentposition = new google.maps.LatLng(lat, lng);
-                            
-                            var mapoptions = {
-                            zoom: 12,
-                            center: currentposition,
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            
-                            var map = new google.maps.Map(document.getElementById("map2"), mapoptions);
-                            
-                            
-                            var marker = new google.maps.Marker({
-                                                                position: currentposition,
-                                                                map: map
-                                                                });
-                            
-                            
+    var map = new google.maps.Map(document.getElementById("map2"), mapoptions);
+
+
+    var marker = new google.maps.Marker({
+        position: currentposition,
+        map: map
     });
+
+				$("#location-output").append(locationText);
+
+			});
+		});
+		
+	};
+
+
+    $(function () {
+
+        var url = "https://api.foursquare.com/v2/venues/explore?ll=44.30,37.20&near=Chicago, IL&client_id=TGZE1Y20FMUHMIMDTR5G3LTBUKT4NYSST3IEWCKCPOJAVLNI&client_secret=OPOSSLEYHH2ZR5G5I05PTCDQRP0FA24WHUDSZ0HLIYVFWT2O&v=20130814";
+
+        $.getJSON(url, placesOutput);
+
+    });
+
+
+});
 
     // ACCELEROMETER
     var updateOrientation = function () {
