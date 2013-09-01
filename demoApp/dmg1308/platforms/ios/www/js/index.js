@@ -55,7 +55,7 @@ function onDeviceReady() {
     // ONSUCCESS GEOLOCATION
     var onSuccess = function (position) {
             var element = document.getElementById('geolocation');
-            element.innerHTML = 'Latitude: ' + "<h1 class='geoText'>" + position.coords.latitude + "</h1>" + 'Longitude: ' + "<h1 class='geoText'>" + position.coords.longitude + "</h1>" + 'Altitude: ' + "<h1 class='geoText'>" + position.coords.altitude + "</h1>" + 'Accuracy: ' + "<h1 class='geoText'>" + position.coords.accuracy + "</h1>" + 'Altitude <br> Accuracy: ' + "<h1 class='geoText'>" + position.coords.altitudeAccuracy + "</h1>" + 'Heading: ' + "<h1 class='geoText'>" + position.coords.heading + "</h1>" + 'Speed: ' + "<h1 class='geoText'>" + position.coords.speed + "</h1>" + 'Timestamp: ' + "<h1 class='geoText'>" + position.timestamp + "</h1>";
+            element.innerHTML = '<em>Latitude: &nbsp;&nbsp;</em>' + position.coords.latitude + '<br><em>Longitude: &nbsp;&nbsp;</em>' + position.coords.longitude + '<br><em>Altitude: &nbsp;&nbsp;</em>' + position.coords.altitude + '<br><em>Accuracy: &nbsp;&nbsp;</em>' + position.coords.accuracy + '<br><em>Altitude <br> Accuracy: &nbsp;&nbsp;</em>' + position.coords.altitudeAccuracy + '<br><em>Heading: &nbsp;&nbsp;</em>' + position.coords.heading + '<br><em>Speed: &nbsp;&nbsp;</em>' + position.coords.speed + '<br><em>Timestamp: &nbsp;&nbsp;</em>' + position.timestamp;
 
             var lat = position.coords.latitude;
             var lng = position.coords.longitude;
