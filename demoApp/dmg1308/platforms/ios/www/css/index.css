@@ -97,7 +97,7 @@ ul {
 }
 
 .logoSpacing {
-    margin-left: 25px;
+    margin-left: 15px;
 
 }
 
@@ -250,13 +250,6 @@ ul {
 
 }
 
-.geoText {
-    margin: 160px;
-    margin-top: -30px;
-    margin-bottom: 0px;
-    text-align: left;
-}
-
 #map {
     width: 100%;
     height: 450px;
@@ -344,6 +337,39 @@ width: auto;
 cell {
     height: 100px;
     padding: 0px;
+}
+
+/************************************* MEDIA QUERY - SMALL SCREEN *************************************/
+
+@media only screen and (max-width: 320px) {
+
+	header img {
+	
+		width: 90%;
+		
+	}
+	
+	footer img {
+	
+		width: 80%;
+		
+	}
+	
+	#geolocation {
+	
+		font-size: 20px;
+		
+	}
+	
+	.my-breakpoint .ui-block-a, 
+	.my-breakpoint .ui-block-b, 
+	.my-breakpoint .ui-block-c,
+	.my-breakpoint .ui-block-d,
+	.my-breakpoint .ui-block-e { 
+		width: 100%; 
+		float: none; 
+	}
+
 }
     
 /************************************* MEDIA QUERY - I-PAD PORTRAIT ORIENTATION */
